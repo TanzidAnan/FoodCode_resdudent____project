@@ -7,19 +7,19 @@ import Navber from './Compontent/Header/Navber'
 function App() {
   const [isActive, setIsActive] = useState({
     cart: true,
-    status: "active"
+    status: "cart"
   })
   const handleIsActiveState = (status) => {
     if (status === 'cart') {
       setIsActive({
         cart: true,
-        status: "active"
+        status: "cart"
       })
     }
     else {
       setIsActive({
         cart: false,
-        status: "active"
+        status: "about"
       })
     }
   }
@@ -32,7 +32,7 @@ function App() {
 
         <div className='flex justify-between'>
           <AllProducts></AllProducts>
-          <CartContainer handleIsActiveState={handleIsActiveState}></CartContainer>
+          <CartContainer handleIsActiveState={handleIsActiveState} isActive={isActive}></CartContainer>
         </div>
       </div>
     </>
