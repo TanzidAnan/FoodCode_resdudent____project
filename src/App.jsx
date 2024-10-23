@@ -23,7 +23,6 @@ function App() {
       })
     }
   }
-  console.log(isActive)
 
   return (
     <>
