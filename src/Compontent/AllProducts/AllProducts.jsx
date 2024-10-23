@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import './AllProducts.css'
 import SingleProduct from '../SingleProduct/SingleProduct';
+// eslint-disable-next-line react/prop-types
 const AllProducts = ({hendleAddToSelectedProduct}) => {
     const [products,setProducts] =useState([]);
 

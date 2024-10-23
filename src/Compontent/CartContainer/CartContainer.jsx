@@ -2,7 +2,7 @@
 import About from '../About/About';
 import Cart from '../Cart/Cart';
 import './CartContainer.css'
-const CartContainer = ({ handleIsActiveState, isActive,selectedProduct }) => {
+const CartContainer = ({ handleIsActiveState, isActive,selectedProduct,hendleRemove }) => {
     return (
         <div className='w-1/2 mx-auto text-center'>
             <h1 className='text-2xl'>Cart contatiner:{selectedProduct.length}</h1>
@@ -11,7 +11,7 @@ const CartContainer = ({ handleIsActiveState, isActive,selectedProduct }) => {
                 <div onClick={() => handleIsActiveState("about")} className={`${isActive.cart ? 'btn' : 'active btn'}`}>About</div>
             </div>
             {
-                isActive.cart ? <Cart></Cart> : <About></About>
+                isActive.cart ? <Cart selectedProduct={selectedProduct} hendleRemove={hendleRemove}></Cart> : <About></About>
             }
 
 
