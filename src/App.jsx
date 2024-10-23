@@ -23,6 +23,12 @@ function App() {
       })
     }
   }
+  const [selectedProduct,setSelectedProduct] =useState([]);
+  const hendleAddToSelectedProduct =(product) =>{
+    const newProduct = [...selectedProduct,product];
+    setSelectedProduct(newProduct)
+    console.log(newProduct)
+  }
 
   return (
     <>
@@ -30,8 +36,12 @@ function App() {
         <Navber></Navber>
 
         <div className='flex justify-between'>
-          <AllProducts></AllProducts>
-          <CartContainer handleIsActiveState={handleIsActiveState} isActive={isActive}></CartContainer>
+          <AllProducts hendleAddToSelectedProduct={hendleAddToSelectedProduct}></AllProducts>
+          <CartContainer
+           handleIsActiveState={handleIsActiveState}
+            isActive={isActive}
+            selectedProduct={selectedProduct}
+            ></CartContainer>
         </div>
       </div>
     </>

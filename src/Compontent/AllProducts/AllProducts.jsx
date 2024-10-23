@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import './AllProducts.css'
 import SingleProduct from '../SingleProduct/SingleProduct';
-const AllProducts = () => {
+const AllProducts = ({hendleAddToSelectedProduct}) => {
     const [products,setProducts] =useState([]);
 
     useEffect(() =>{
@@ -18,7 +18,9 @@ const AllProducts = () => {
             <h1>All Product :{products.length}</h1>
             <div className='grid grid-cols-2'>
                 {
-                    products.map(product => <SingleProduct key={product.id} product={product}></SingleProduct>)
+                    products.map(product => <SingleProduct key={product.id} product={product} 
+                        hendleAddToSelectedProduct={hendleAddToSelectedProduct}
+                    ></SingleProduct>)
                 }
             </div>
         </div>
