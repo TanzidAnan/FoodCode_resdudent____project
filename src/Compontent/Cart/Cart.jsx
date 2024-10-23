@@ -2,7 +2,7 @@
 const Cart = () => {
     return (
         <div>
-            <h1>cart</h1>
+            <h1 className="text-lg">cart</h1>
         </div>
     );
 };
