@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Margherita Pizza",
+      "img": "https://i.ibb.co.com/hYXY6Tn/menu-item-4.png",
+      "description": "Classic Italian pizza with fresh tomatoes, mozzarella, and basil.",
+      "price": 12.99,
+      "category": "Pizza",
+      "isFeature": true
+    },
+    {
+      "id": 2,
+      "name": "Spaghetti Carbonara",
+      "img": "https://i.ibb.co.com/gzgZ8K4/menu-item-6.png",
+      "description": "Traditional pasta dish with eggs, pancetta, Parmesan, and pepper.",
+      "price": 14.49,
+      "category": "Pasta",
+      "isFeature": false
+    },
+    {
+      "id": 3,
+      "name": "Caesar Salad",
+      "img": "https://i.ibb.co.com/pjddHJT/menu-item-5.png",
+      "description": "Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan.",
+      "price": 8.99,
+      "category": "Salad",
+      "isFeature": true
+    },
+    {
+      "id": 4,
+      "name": "BBQ Chicken Wings",
+      "img": "https://i.ibb.co.com/Hq1Y627/menu-item-3.png",
+      "description": "Juicy chicken wings coated in a tangy BBQ sauce.",
+      "price": 10.99,
+      "category": "Appetizers",
+      "isFeature": false
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Lava Cake",
+      "img": "https://i.ibb.co.com/w0TJLSt/menu-item-2.png",
+      "description": "Decadent chocolate cake with a gooey molten center.",
+      "price": 6.99,
+      "category": "Dessert",
+      "isFeature": true
+    },
+    {
+      "id": 6,
+      "name": "Grilled Salmon",
+      "img": "https://i.ibb.co.com/0fFNwsS/menu-item-1.png",
+      "description": "Fresh salmon fillet grilled to perfection with lemon and herbs.",
+      "price": 18.99,
+      "category": "Main Course",
+      "isFeature": false
+    }
+  ]
+  
